@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+# Rekrutacja Formularz - Update
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-Currently, two official plugins are available:
+## Node.js and npm installed on your machine.
+[Installation](https://nodejs.org/en)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Clone the repository to your local machine using your preferred method (HTTPS or SSH):
 
-## Expanding the ESLint configuration
+git clone https://github.com/karbowskijakub/validation-form
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Change your working directory to the project's folder:
 
-- Configure the top-level `parserOptions` property like this:
+cd your-repo
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Install the project dependencies using npm:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm install
+
+## Running the Project
+
+To start the project on localhost:3000 for development, you can use the following npm script:
+
+npm run dev
+
+This command will start the development server and your project will be accessible at http://localhost:3000/ in your web browser.
