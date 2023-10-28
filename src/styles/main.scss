@@ -1,0 +1,175 @@
+$primary: black; //black text
+$secondary: #ffffff; //white text
+$tetriary: #f0f0f0; //form background
+$quaternary: #dddcdc; //input background
+$quinary: #a8b350;
+$senary: #223c23;
+$septenary: #53a548;
+$warning: #bb2124;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*================================================== */
+
+.bg-image {
+  background-image: url(../assets/images/field.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  box-shadow: inset 8px 8px 100px 56px rgba(34, 60, 35, 1);
+}
+
+.bg-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: $senary;
+  opacity: 0.5;
+}
+
+.form-style {
+  position: relative;
+  max-width: 35em;
+  height: 36em;
+  background-color: $tetriary;
+  padding: 0.5em 1em;
+  @media only screen and (min-width: 768px) {
+    padding: 2em 4em;
+  }
+}
+
+.input-style {
+  width: 100%;
+  padding: 0.5em;
+
+  border: none;
+  outline: none;
+
+  text-align: center;
+  background-color: $quaternary;
+  &::placeholder {
+    color: $septenary;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.button {
+  border: none;
+  background-color: $quinary;
+  padding: 0 1.5em;
+  text-transform: uppercase;
+  color: $secondary;
+  font-size: 2em;
+  font-weight: bold;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.raw-text {
+  color: $senary;
+  font-size: 0.8em;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 0.15em;
+  margin-right: 1em;
+  border: none;
+  outline: none;
+  background-color: $quaternary;
+  cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked:before {
+  content: "✓";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash-container {
+  padding: 0.5em;
+  position: absolute;
+  left: 50%;
+  max-width: fit-content;
+  transform: translate(-50%, -25%);
+  border: 1px solid $primary;
+  background-color: $quinary;
+  color: $senary;
+
+  @media only screen and (min-width: 768px) {
+    padding: 1em;
+  }
+}
+
+.icon {
+  display: flex;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  cursor: pointer;
+}
+.error {
+  font-size: 0.8em;
+  color: $warning;
+  margin: 0;
+}
+
+.title-container {
+  color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+
+  padding: 0.5em 1em;
+  @media only screen and (min-width: 768px) {
+    padding: 2em 4em;
+    font-size: 1.5em;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
